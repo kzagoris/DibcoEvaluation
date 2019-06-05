@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>DibcoEvaluation</RootNamespace>
+    <Authors>Konstantinos Zagoris &lt;kzagoris@gmail.com&gt;</Authors>
+    <Product>DibcoEvaluation</Product>
+    <PackageProjectUrl>https://github.com/kzagoris/DibcoEvaluation</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kzagoris/DibcoEvaluation</RepositoryUrl>
+    <Description>DIBCO Competitions Evaluation Tool  - see https://vc.ee.duth.gr/dibco2019/</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.5.0" />
+    <PackageReference Include="shellprogressbar" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Externals\DIBCO_metrics.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
